@@ -6,7 +6,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      {/* TODO: Remove after test */}
+      <div className="min-h-screen flex items-center justify-center bg-blue-900 text-white">
+        <h1 className="text-4xl font-bold">Tailwind + Vite = ⚡</h1>
+      </div>
     </div>
   )
 }
