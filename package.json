@@ -7,12 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:css": "tailwindcss build src/css/index.css -o src/css/output.css",
+    "build:css": "npx tailwindcss build -i src/css/index.css -o src/css/output.css",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.4",
+    "clsx": "^2.1.1",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -34,7 +34,7 @@
     "playwright": "^1.52.0",
     "postcss": "^8.5.3",
     "storybook": "^8.6.12",
-    "tailwindcss": "^4.1.4",
+    "tailwindcss": "^3.4.17",
     "vite": "^6.3.3",
     "vitest": "^3.1.2"
   }
