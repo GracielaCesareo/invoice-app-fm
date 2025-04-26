@@ -1,9 +1,19 @@
+
+
 // Define types for the Button props
+export type ButtonVariant = 'primary' | 'secondary' | 'danger';
+export type IconPosition = 'start' | 'end';
+export type ButtonSize = 'sm' | 'md' | 'lg';
+
 export interface ButtonProps {
-    children: React.ReactNode;          // Button content
-    variant?: 'primary' | 'secondary' | 'danger'; // Button style variant
-    size?: 'small' | 'medium' | 'large';         // Button size
-    disabled?: boolean;                 // Is the button disabled?
-    className?: string;                 // Additional classes (optional)
-    onClick?: () => void;                // Click event handler
-  };
+  children?: React.ReactNode;
+  onClick?: () => void;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
+  icon?: React.ReactNode;
+  iconPosition?: IconPosition;
+  fullWidth?: boolean;
+  disabled?: boolean;
+  loading?: boolean;
+  className?: string;
+}
